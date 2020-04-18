@@ -1,0 +1,4 @@
+Venv/
+.vscode/
+app/__pycache__/
+Website.code-workspace
