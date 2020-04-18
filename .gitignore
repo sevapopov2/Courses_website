@@ -1,4 +1,8 @@
+#Virtual Environment
 Venv/
+#VSCode files and folders
 .vscode/
-app/__pycache__/
 Website.code-workspace
+#Python cache
+app/__pycache__/
+__pycache__/
