@@ -6,5 +6,7 @@ Website.code-workspace
 #Python cache
 app/__pycache__/
 __pycache__/
-#Заметки
+#пїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 Notes/
+#Database
+app.db
