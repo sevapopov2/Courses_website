@@ -8,8 +8,8 @@
     </head>
     <body>
         <div>Webpage:
-            <a href="/index">На главную</a>
-            <a href="/login">Войти</a>
+            <a href="{{url_for('index')}}">На главную</a>
+            <a href="{{url_for('login')}}">Войти</a>
         </div>
         <hr>
         {% with messages = get_flashed_messages() %}
