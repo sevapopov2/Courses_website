@@ -1,7 +1,7 @@
 <html>
     <head>
         {% if title %}
-        <title>{{title}} - Добро пожаловать!</title>
+        <title>{{title}} - Главная</title>
         {% else %}
         <title>Добро пожаловать на мою страницу!</title>
         {% endif %}
@@ -9,7 +9,11 @@
     <body>
         <div>Webpage:
             <a href="{{url_for('index')}}">На главную</a>
+            {% if current_user.is_anonymos %}
             <a href="{{url_for('login')}}">Войти</a>
+            {% else %}
+            <a href="{{ url_for('logout') }}">Выйти</a>
+            {% endif %}
         </div>
         <hr>
         {% with messages = get_flashed_messages() %}
