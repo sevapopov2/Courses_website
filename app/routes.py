@@ -9,7 +9,7 @@ from app.models import User
 @app.route('/index')
 @login_required
 def index():
-    return render_template('index.html', title='Главная', user=user)
+    return render_template('index.html', title='Главная')
 @app.route('/login', methods=['GET', 'POST'])
 def login():
     if current_user.is_authenticated:
